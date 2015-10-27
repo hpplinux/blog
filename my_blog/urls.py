@@ -20,7 +20,6 @@ from article.views import RSSFeed
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$','article.views.home',name='home'),
-	# url(r'^test/$', 'article.views.test'),
     url(r'^(?P<id>\d+)/$','article.views.detail',name='detail'),
     url(r'^archives/$','article.views.archives',name='archives'),
     url(r'^aboutme/$', 'article.views.about_me', name = 'about_me'),
